@@ -4,6 +4,11 @@ Alpine based Python container
 ## About
 Alpine based docker image with Python3 and pip.
 
+## Docker Hub
+```
+dutchsecniels/alpine-python
+```
+
 ## Dockerfile
 ```Dockerfile
 # Install Python
@@ -17,14 +22,28 @@ RUN rm -r /root/.cache
 ```
 
 ## Building
+
+### Build
 ```bash
 docker build -t alpine-python .
 ```
 
+### Run
+```
+docker run -it alpine-python
+```
+
 ## Usage
 Intended as base image.
+```Dockerfile
+FROM dutchsecniels/alpine-python
+
+COPY app.py /app.py
+
+CMD /usr/bin/python3 /app.py
+```
 
 For those who want to use the interactive Python3 shell run the following:
 ```
-docker run -it alpine-python
+docker run -it dutchsecniels/alpine-python
 ```
