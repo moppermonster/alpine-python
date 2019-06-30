@@ -47,3 +47,7 @@ For those who want to use the interactive Python3 shell run the following:
 ```
 docker run -it dutchsecniels/alpine-python
 ```
+
+## Credits and thanks
+
+[Inspiration](https://github.com/hellt/nginx-uwsgi-flask-alpine-docker/tree/master/python3)
