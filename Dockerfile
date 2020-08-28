@@ -1,7 +1,5 @@
 FROM alpine
 
-MAINTAINER niels@dutchsec.com
-
 # Install Python
 RUN apk add --no-cache python3
 # Ensure pip
