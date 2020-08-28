@@ -6,7 +6,7 @@ Alpine based docker image with Python3 and pip.
 
 ## Docker Hub
 ```
-dutchsecniels/alpine-python
+moppermonster/alpine-python
 ```
 
 ## Dockerfile
@@ -36,7 +36,7 @@ docker run -it alpine-python
 ## Usage
 Intended as base image.
 ```Dockerfile
-FROM dutchsecniels/alpine-python
+FROM moppermonster/alpine-python
 
 COPY app.py /app.py
 
@@ -45,7 +45,7 @@ CMD /usr/bin/python3 /app.py
 
 For those who want to use the interactive Python3 shell run the following:
 ```
-docker run -it dutchsecniels/alpine-python
+docker run -it moppermonster/alpine-python
 ```
 
 ## Credits and thanks
